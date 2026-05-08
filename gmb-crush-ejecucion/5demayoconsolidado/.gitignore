@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+.astro/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Cloudflare
+.wrangler/
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Clientes activos: cada cliente real va en su propio commit;
+# pero los clientes de prueba locales (ej. *-test) no se trackean
+CLIENTES/*-test
+CLIENTES/*-test/

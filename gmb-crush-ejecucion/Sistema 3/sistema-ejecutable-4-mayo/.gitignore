@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+.astro/
+build/
+
+# Environment
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Cloudflare
+.wrangler/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Cache
+.cache/
+.parcel-cache/
+
+# OS
+ehthumbs.db
+Desktop.ini
+
+# Tokens / credenciales (NUNCA commitear)
+secrets.json
+credentials/
+*.pem
+*.key

@@ -1,0 +1,317 @@
+{
+  "_doc": "Outputs estructurados del cluster (PLANTILLA VACÍA). Cada cliente nuevo es una copia de esta carpeta. La IA rellena `value` y `status`; los IDs y nombres son canónicos y no se renombran. Versión catálogo 0.1.0.",
+
+  "slug": "",
+  "fecha_arranque": "",
+  "meta": {
+    "updated_at": "",
+    "catalog_version": "0.1.0"
+  },
+
+  "outputs": {
+    "Pre.1": {
+      "id": "Pre.1",
+      "name": "Nombre del negocio",
+      "value": "",
+      "status": "",
+      "fuente": "Cliente preflight",
+      "source": "",
+      "bloque": 0
+    },
+    "Pre.2": {
+      "id": "Pre.2",
+      "name": "Qué hace",
+      "value": "",
+      "status": "",
+      "fuente": "Cliente preflight",
+      "source": "",
+      "bloque": 0
+    },
+    "Pre.3": {
+      "id": "Pre.3",
+      "name": "Dirección con CP",
+      "value": "",
+      "status": "",
+      "fuente": "Cliente preflight",
+      "source": "",
+      "bloque": 0
+    },
+    "Pre.4": {
+      "id": "Pre.4",
+      "name": "Estado del GBP",
+      "value": "",
+      "status": "",
+      "fuente": "Cliente preflight",
+      "source": "",
+      "bloque": 0
+    },
+    "Pre.5": {
+      "id": "Pre.5",
+      "name": "Ciudades para Local Pack",
+      "value": [],
+      "status": "",
+      "fuente": "Cliente preflight",
+      "source": "",
+      "bloque": 0
+    },
+
+    "1.1": {
+      "id": "1.1",
+      "name": "Business Name",
+      "value": "",
+      "status": "",
+      "fuente": "Cliente preflight",
+      "source": "",
+      "hereda_de": ["Pre.1"],
+      "bloque": 1
+    },
+    "1.2": {
+      "id": "1.2",
+      "name": "Website URL / Canonical Domain",
+      "value": "",
+      "status": "",
+      "fuente": "Cliente preflight",
+      "source": "",
+      "bloque": 1
+    },
+    "1.3": {
+      "id": "1.3",
+      "name": "GBP Lifecycle Status",
+      "value": "",
+      "status": "",
+      "fuente": "Cliente preflight + Doctrina GMB Crush",
+      "source": "",
+      "hereda_de": ["Pre.4"],
+      "bloque": 1
+    },
+    "1.4": {
+      "id": "1.4",
+      "name": "Full NAP (8 campos)",
+      "value": {
+        "name": "",
+        "street": "",
+        "city": "",
+        "state": "",
+        "zip": "",
+        "country": "",
+        "phone": "",
+        "email": ""
+      },
+      "status": "",
+      "fuente": "Cliente preflight",
+      "source": "",
+      "bloque": 1
+    },
+    "1.5": {
+      "id": "1.5",
+      "name": "Planned Primary GBP Category",
+      "value": "",
+      "status": "",
+      "fuente": "Doctrina + Local Pack",
+      "source": "",
+      "bloque": 1
+    },
+    "1.6": {
+      "id": "1.6",
+      "name": "Planned Additional GBP Categories",
+      "value": [],
+      "status": "",
+      "fuente": "Doctrina + Local Pack",
+      "source": "",
+      "bloque": 1
+    },
+    "1.7": {
+      "id": "1.7",
+      "name": "Main City",
+      "value": "",
+      "status": "",
+      "fuente": "Info heredada",
+      "source": "",
+      "hereda_de": ["1.4"],
+      "bloque": 1
+    },
+    "1.8": {
+      "id": "1.8",
+      "name": "Physical Location City",
+      "value": "",
+      "status": "",
+      "fuente": "Info heredada",
+      "source": "",
+      "hereda_de": ["Pre.3"],
+      "bloque": 1
+    },
+    "1.9": {
+      "id": "1.9",
+      "name": "Servicios principales",
+      "value": [],
+      "status": "",
+      "fuente": "Doctrina + Local Pack",
+      "source": "",
+      "bloque": 1
+    },
+    "1.10": {
+      "id": "1.10",
+      "name": "Direct + Candidate LCAs",
+      "value": {
+        "direct": [],
+        "candidate": []
+      },
+      "status": "",
+      "fuente": "Doctrina + Local Pack",
+      "source": "",
+      "hereda_de": ["1.4"],
+      "bloque": 1
+    },
+    "1.11": {
+      "id": "1.11",
+      "name": "Approved Expansion Areas",
+      "value": [],
+      "status": "confirmed",
+      "fuente": "Tracking",
+      "source": "Default doctrinal: E=0 en Phase 1. Se evalúa con Paso 19 post-launch tras 30 días de tracking",
+      "bloque": 1
+    },
+    "1.12": {
+      "id": "1.12",
+      "name": "GeoArticles per Service (G)",
+      "value": 3,
+      "status": "confirmed",
+      "fuente": "Doctrina GMB Crush",
+      "source": "Constante doctrinal G=3",
+      "bloque": 1
+    },
+    "1.13": {
+      "id": "1.13",
+      "name": "Preferred CTA",
+      "value": "",
+      "status": "",
+      "fuente": "Doctrina + Local Pack",
+      "source": "",
+      "bloque": 1
+    },
+    "1.14": {
+      "id": "1.14",
+      "name": "Trust Signals",
+      "value": [],
+      "status": "",
+      "fuente": "Doctrina + Local Pack",
+      "source": "",
+      "bloque": 1
+    },
+
+    "2.5": {
+      "id": "2.5",
+      "name": "Variable S (count core services)",
+      "value": 0,
+      "status": "",
+      "fuente": "Info heredada",
+      "source": "",
+      "hereda_de": ["1.9"],
+      "bloque": 1
+    },
+    "2.6": {
+      "id": "2.6",
+      "name": "Variable A",
+      "value": 0,
+      "status": "",
+      "fuente": "Info heredada",
+      "source": "",
+      "hereda_de": ["1.6"],
+      "bloque": 1
+    },
+    "2.7": {
+      "id": "2.7",
+      "name": "Variable G",
+      "value": 0,
+      "status": "",
+      "fuente": "Info heredada",
+      "source": "",
+      "hereda_de": ["1.12"],
+      "bloque": 1
+    },
+    "2.8": {
+      "id": "2.8",
+      "name": "Total páginas SEO base",
+      "value": 0,
+      "status": "",
+      "fuente": "Info heredada",
+      "source": "",
+      "hereda_de": ["2.5", "2.6", "2.7"],
+      "bloque": 1
+    },
+    "2.9": {
+      "id": "2.9",
+      "name": "Inventario por tipo de página",
+      "value": {
+        "HP": 0,
+        "SO": 0,
+        "GH": 0,
+        "LBS": 0,
+        "AC": 0,
+        "GA": 0,
+        "AUX": 0
+      },
+      "status": "",
+      "fuente": "Info heredada",
+      "source": "",
+      "hereda_de": ["2.8"],
+      "bloque": 1
+    },
+    "2.10": {
+      "id": "2.10",
+      "name": "Optional Expansion Formula",
+      "value": "",
+      "status": "",
+      "fuente": "Info heredada",
+      "source": "",
+      "hereda_de": ["1.11"],
+      "bloque": 1
+    },
+
+    "3.2": {
+      "id": "3.2",
+      "name": "GeoHub URL Style",
+      "value": "Option A: /[main-city]/",
+      "status": "confirmed",
+      "fuente": "Arquitectura técnica",
+      "source": "Default doctrinal Option A (más limpio)",
+      "bloque": 1
+    },
+    "3.4": {
+      "id": "3.4",
+      "name": "GeoArticle Topics",
+      "value": [],
+      "status": "",
+      "fuente": "Doctrina + Keyword Research",
+      "source": "",
+      "hereda_de": ["1.9", "1.12"],
+      "bloque": 1
+    },
+    "3.11": {
+      "id": "3.11",
+      "name": "Default Page Status",
+      "value": "Planned",
+      "status": "confirmed",
+      "fuente": "Doctrina GMB Crush",
+      "source": "Constante doctrinal: todas las URLs arrancan como `Planned`",
+      "bloque": 1
+    },
+
+    "16.1": {
+      "id": "16.1",
+      "name": "Identidad Visual y CSS Base (design tokens)",
+      "value": {
+        "color_primary": "",
+        "color_primary_50": "",
+        "color_primary_500": "",
+        "color_primary_900": "",
+        "color_accent": "",
+        "font_family": ""
+      },
+      "status": "",
+      "fuente": "Cliente preflight",
+      "source": "",
+      "bloque": 5
+    }
+  }
+}
